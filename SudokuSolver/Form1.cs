@@ -16,14 +16,7 @@ namespace SudokuSolver
         public Form1()
         {
             InitializeComponent();
-            try
-            {
-                GameView.Game = Game.Parse(System.IO.File.ReadAllText("field.txt"));
-            }
-            catch (Exception)
-            {
-                GameView.Game = new Game();
-            }
+            GameView.Game = new Game();
         }
 
         private void SolveButton_Click(object sender, EventArgs e)

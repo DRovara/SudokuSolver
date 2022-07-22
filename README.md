@@ -99,7 +99,7 @@ This project requires the installation of the .NET runtime environment. It can b
    ```sh
    git clone https://github.com/TheCodingDamian/SudokuSolver.git
    ```
-2. Run the pre-compiled binary from the path `SudokuSolver.exe`
+2. Run the pre-compiled binary from the path `bin/SudokuSolver.exe`
   OR
   Build the project yourself by opening it using Visual Studio.
 
@@ -111,20 +111,20 @@ This project requires the installation of the .NET runtime environment. It can b
 After running the app, the GUI will be displayed.
 
 <div style="text-align: center">
-<img src="images/grid-empty.jpeg" alt="Empty Grid" width="124" height="230" style="padding: 0px">
+<img src="images/grid-empty.jpeg" alt="Empty Grid" style="border: 1px solid; padding: 0px">
 </div>
 
 You can now use the GUI to manually edit the sudoku puzzle. Alternatively, you can press the "Import" button to import an existing sudoku puzzle from a file.
 THe format is a simple `txt` file consisting of nine lines with nine characters each, where each character is either a digit from one to nine, or an empty space if the puzzle is empty at that position.
 
-<img src="images/grid-sample.jpeg" alt="Sample Sudoku" width="124" height="230" style="padding: 0px">
+<img src="images/grid-sample.jpeg" alt="Sample Sudoku" style="border: 1px solid; padding: 0px">
 
 Once you have provided your sudoku puzzle to the solver, you can press the "Solve" button to run the solving procedure. After a short processing time, the resulting solution
 will be displayed. Should the solver determine the puzzle as unsolvable (i.e. no solution for this sudoku exists), a message window will pop up reporting the result. Should the solver
 be unable to find a solution, but also unable to prove that no solution exists, it will fill remaining spaces in the grid with pencil marks detailing all digits that may still be entered in each cell.
 
-<img src="images/sudoku-solved.jpeg" alt="Solved Sudoku" width="124" height="230" style="padding: 0px">
-<img src="images/sudoku-unsolved.jpeg" alt="Unsolved Sudoku" width="124" height="230" style="padding: 0px">
+<img src="images/sudoku-solved.jpeg" alt="Solved Sudoku" style="border: 1px solid; padding: 0px">
+<img src="images/sudoku-unsolved.jpeg" alt="Unsolved Sudoku" style="border: 1px solid; padding: 0px">
 
 You may also modify the allowed sudoku techniques that the solver may use to solve the puzzle. You can simply do this by un-checking any of the techniques on the right before pressing "Solve".
 
